@@ -13,13 +13,13 @@
   </head>
   <body>
     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
+        <ol class="carousel-indicators">
+            <li type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></li>
+            <li type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></li>
+            <li type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></li>
+            <li type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></li>
+            <li type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/schoolTop.jpeg" alt="" class="d-block w-100">
@@ -56,30 +56,41 @@
           </button>
     </div>
 
-    <div class="bootCards">
-    <div class="card" style="width: 18rem; height: auto;">
-      <div class="card-body">
-        <h5 class="card-title">Google</h5>
-        <p class="card-text">This Card takes you to google.com</p>
-        <a href="https://www.google.com/" class="btn btn-primary" target="_blank">Google</a>
+    <div class="row">
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card" style="width: 18rem; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">Google</h5>
+            <p class="card-text">This Card takes you to google.com</p>
+            <a href="https://www.google.com/" class="btn btn-primary" target="_blank">Google</a>
+          </div>
+        </div>
+        </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card" style="width: 18rem; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">Modal</h5>
+            <p class="card-text">This card opens a Modal</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#firstModal">
+              Open Modal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card" style="width: 18rem; height: auto;">
+          <div class="card-body">
+            <h5 class="card-title">GitHub</h5>
+            <p class="card-text">This takes you to the GitHub repo for this project</p>
+            <a href="https://github.com/JaxonKnight28/BootStrap-Carousel" class="btn btn-primary" target="_blank">GitHub</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem; height: auto;">
-      <div class="card-body">
-        <h5 class="card-title">Modal</h5>
-        <p class="card-text">This card opens a Modal</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#firstModal">
-          Open Modal
-        </button>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem; height: auto;">
-      <div class="card-body">
-        <h5 class="card-title">GitHub</h5>
-        <p class="card-text">This takes you to the GitHub repo for this project</p>
-        <a href="https://github.com/JaxonKnight28/BootStrap-Carousel" class="btn btn-primary" target="_blank">GitHub</a>
-      </div>
-    </div>
+
   </div>
 
 <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel" aria-hidden="true">
@@ -98,6 +109,7 @@
     </div>
   </div>
 </div>
+
 
   </body>
 </html>
