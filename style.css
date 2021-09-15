@@ -5,12 +5,6 @@ img {
 .carousel {
     height:100vh;
   }
-  
-.bootCards {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-}
 
 .carousel-caption{
     font-size: 30px;
