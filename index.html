@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>BootStrap Carousel</title>
@@ -53,34 +56,48 @@
           </button>
     </div>
 
-
     <div class="bootCards">
     <div class="card" style="width: 18rem; height: auto;">
       <div class="card-body">
-        <h5 class="card-title">Card 1</h5>
+        <h5 class="card-title">Google</h5>
         <p class="card-text">This Card takes you to google.com</p>
         <a href="https://www.google.com/" class="btn btn-primary" target="_blank">Google</a>
       </div>
     </div>
     <div class="card" style="width: 18rem; height: auto;">
       <div class="card-body">
-        <h5 class="card-title">Card 1</h5>
-        <p class="card-text">This is one card</p>
-
+        <h5 class="card-title">Modal</h5>
+        <p class="card-text">This card opens a Modal</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#firstModal">
+          Open Modal
+        </button>
       </div>
     </div>
     <div class="card" style="width: 18rem; height: auto;">
       <div class="card-body">
-        <h5 class="card-title">Card 1</h5>
-        <p class="card-text">This is one card</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">GitHub</h5>
+        <p class="card-text">This takes you to the GitHub repo for this project</p>
+        <a href="https://github.com/JaxonKnight28/BootStrap-Carousel" class="btn btn-primary" target="_blank">GitHub</a>
       </div>
     </div>
   </div>
 
-
-
-
+<div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="firstModalLabel">Bootstrap Modal</h5>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is a modal built using Bootstrap
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
