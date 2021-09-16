@@ -9,3 +9,7 @@ img {
 .carousel-caption{
     font-size: 30px;
 }
+
+.carousel, .bootCards {
+    margin-bottom: 30px;
+}
